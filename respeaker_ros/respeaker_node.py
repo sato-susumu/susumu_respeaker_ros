@@ -17,6 +17,13 @@ class RespeakerNode(Node):
         self.doa_yaw_offset = self.declare_parameter('doa_yaw_offset', 90.0)
 
         self.respeaker = RespeakerInterface() #mic-array initialisation
+        self.respeaker.write('AGCGAIN', 50.0)
+        self.respeaker.write('AGCONOFF', 0)
+        self.respeaker.write('CNIONOFF', 0)
+        self.respeaker.write('GAMMA_NS_SR', 1.8)
+        self.respeaker.write('MIN_NS_SR', 0.01)
+        self.respeaker.write('STATNOISEONOFF_SR', 1)
+
 
         self.timer = self.create_timer(0.1, self.timer_callback)
 
