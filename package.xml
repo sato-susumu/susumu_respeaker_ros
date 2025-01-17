@@ -17,10 +17,7 @@
   <test_depend>std_msgs</test_depend>
 
   <depend>angles</depend>
-  <depend>audio_common_msgs</depend>
   <depend>geometry_msgs</depend>
-  <depend>portaudio19-dev</depend>
-  <depend>python3-pyaudio</depend>
   <depend>python-spidev-pip</depend>
   <depend>tf_transformations</depend>
 
