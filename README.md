@@ -1,3 +1,6 @@
+# susumu_respeaker_ros
+Note: This node has removed the "publish audio function" from the original source code.
+
 # respeaker_ros
 
 ROS2 wrapper for the ReSpeaker 4 Mic Array. Publishes audio and direction-of-arrival information. 
